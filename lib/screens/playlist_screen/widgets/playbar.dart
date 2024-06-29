@@ -9,13 +9,13 @@ class Playbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CustomButton(),
-        SizedBox(width: 10,),
-        IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border,size: 25,)),
-        SizedBox(width: 10,),
-        IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz,size: 25,)),
-        Spacer(),
-        Text('Followers\n${followers}',style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 12),textAlign: TextAlign.right,)
+        const CustomButton(),
+        const SizedBox(width: 10,),
+        IconButton(onPressed: (){}, icon: const Icon(Icons.favorite_border,size: 25,)),
+        const SizedBox(width: 10,),
+        IconButton(onPressed: (){}, icon: const Icon(Icons.more_horiz,size: 25,)),
+        const Spacer(),
+        Text('Followers\n$followers',style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 12),textAlign: TextAlign.right,)
       ],
     );
   }

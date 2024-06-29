@@ -62,12 +62,12 @@ class _PlylistMainState extends State<PlylistMain> {
             style: TextButton.styleFrom(
                 foregroundColor: Theme.of(context).iconTheme.color),
             onPressed: () {},
-            label: Text(
+            label: const Text(
               'Praveen',
             ),
             icon: const Icon(Icons.account_circle_outlined),
           ),
-          SizedBox(
+          const SizedBox(
             width: 8,
           ),
           IconButton(
